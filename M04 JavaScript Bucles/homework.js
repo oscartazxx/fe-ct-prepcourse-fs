@@ -181,40 +181,52 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   var noprimo = 0;
+   
    var resultado; 
-   if (num==0 || num ==1){
-      noprimo++;
-      //return("No es primo");
-   }else{
+   var noprimo=0;
+   if (num<=1){
+      noprimo=noprimo+1;
+      //return(false);
+   }else if (num>1){
+      noprimo=0;
       for (var i=2; i<num; i++){
-         if (num%i==0) {      //si es divisible exactamente no es primo
-           noprimo++;             
+         if (num%i==0) {      //no es primo
+           noprimo=noprimo+1;  
+           
+           //return(false)           
          }
       }
    }  
-   if (noprimo=0){
-      resultado=true;
+   if (noprimo==0){
+      return(true);
    } else{
-      resultado=false;      
+      return(false);      
    }
-   return(resultado);
+   
 }
 
   
-
-
-
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
+   if (valor==true){
+      return("Soy verdadero");
+   }else{
+      return("Soy falso");
+   }
 }
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
+   var longitud = num.toString().length;
+
+   if (longitud==3){
+      return(true);
+   }else{}
+   return(false);
 }
 
 function doWhile(num) {
@@ -222,6 +234,13 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
+   let i=1;
+   do{
+      num=num+5;
+      i=i+1;
+   }while(i<=8);
+
+   return(num);
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
