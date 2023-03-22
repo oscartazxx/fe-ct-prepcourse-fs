@@ -225,8 +225,9 @@ function tieneTresDigitos(num) {
 
    if (longitud==3){
       return(true);
-   }else{}
+   }else{
    return(false);
+   }
 }
 
 function doWhile(num) {
