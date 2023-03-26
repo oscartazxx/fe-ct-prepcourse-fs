@@ -161,7 +161,7 @@ function todosIguales(array) {
    // Tu código:
    let total=1;
 
-    console.log(array.length);
+    //console.log(array.length);
  
     for (i=1; i<array.length;i++){
         if (array[0]===array[i]){
@@ -169,7 +169,7 @@ function todosIguales(array) {
         } 
     }
    
-    console.log(total);
+    //console.log(total);
     
     if (total===array.length){
         return(true);
@@ -280,20 +280,8 @@ function continueStatement(num) {
 
 return(nuevoArreglo);
 
+}
 
-
-//     for (i=1; i<=10; i++){
-     
-//       if (i === 5){
-//         continue;
-//      }else{
-//         num=num+2;
-//         nuevoArreglo.push(num);
-//      }
-
-//      return(nuevoArreglo);
-//   }
-} 
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
