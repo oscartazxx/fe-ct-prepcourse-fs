@@ -28,8 +28,6 @@ function operacionMatematica(num1, num2, cb) {
    // Retorna el resultado del callback pasándole como parámetros los números.
    // Tu código:
    cb(num1, num2);
-
-
 }
 
 function sumarArray(arrayOfNumbers, cb) {
@@ -75,19 +73,13 @@ function filter(arrayOfStrings) {
    // Debes identificar todos los elementos el arreglo que comiencen con la letra "a".
    // Luego retorna un nuevo arreglo con estos elementos.
    // Tu código:
-   let arregloConA = [];
-   arrayOfStrings.forEach((cadena) => { primeraLetra(cadena) });
+   let nuevoArreglo = [];
 
-
-   function primeraLetra(palabra) {
-      let palabraJunta;
-      let palabraSeparada = palabra.split('');
-      if (palabraSeparada[0] == 'a') {
-         palabraJunta = palabraSeparada.join('');
-         arregloConA.push(palabraJunta);
-      }
+   function recorrerArreglo(){
+      forEach
+      
    }
-   return (arregloConA);
+
 
 }
 
